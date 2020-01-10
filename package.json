@@ -1,0 +1,28 @@
+{
+  "name": "refresh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ENV=prod node helloworld.js",
+    "develop": "cross-env ENV=develop node helloworld.js",
+    "add": "git add .",
+    "commit": "git commit -m 'autodeploy' ",
+    "push":"git push",
+    "deploy": "npm run add && npm run commit && npm run push",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shivprataprai/refresh.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shivprataprai/refresh/issues"
+  },
+  "homepage": "https://github.com/shivprataprai/refresh#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
